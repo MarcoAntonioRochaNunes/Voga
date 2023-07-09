@@ -22,7 +22,7 @@ nav {
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 20vh;
+  height: 15vh;
 }
 .header-menu {
   display: flex;
@@ -45,6 +45,39 @@ nav {
     text-align: center;
   }
   .header-menu a {
+    display: none;
+  }
+}
+/* SUB-MENU */
+.sub-menu-seg {
+  display: flex;
+  gap: 24px;
+}
+.sub-menu-seg li {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.sub-menu-seg li:last-child {
+  color: #c3dab5;
+}
+.sub-menu-bg {
+  background-color: #141414;
+  height: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .sub-menu-seg li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .sub-menu-seg li {
     display: none;
   }
 }

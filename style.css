@@ -64,6 +64,7 @@ img {
   font-family: var(--m);
   font-size: 1.25rem;
   line-height: 1.2rem;
+  color: var(--c9);
 }
 #logo {
   max-width: 100%;
@@ -170,7 +171,22 @@ img {
 .btn-effects:hover:after {
   width: 10%;
 }
-
+@media (max-width: 900px) {
+  .container-banner-1 {
+    padding: 20px;
+  }
+  .container-banner-1 h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .container-banner-1 p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .container-banner-1 a {
+    font-size: 18px;
+  }
+}
 @media (max-width: 800px) {
   .banner-1 {
     max-width: 100%;

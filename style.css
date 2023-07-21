@@ -26,6 +26,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
   padding: 0;
@@ -151,6 +152,7 @@ img {
   display: grid;
   gap: 20px;
   padding: 36px;
+  justify-items: start;
 }
 .container-banner-1 a {
   font-family: var(--m);
@@ -169,7 +171,7 @@ img {
   transition-timing-function: ease;
 }
 .btn-effects:hover:after {
-  width: 10%;
+  width: 100%;
 }
 @media (max-width: 900px) {
   .container-banner-1 {
@@ -219,5 +221,130 @@ img {
   }
   .btn-effects::after {
     display: none;
+  }
+}
+/* BANNER 2 */
+.banner-2 {
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 100%;
+}
+.banner-2-box {
+  max-width: 1500px;
+  background-color: var(--c4);
+  display: flex;
+  border-radius: 4px;
+  position: relative;
+}
+.testimagem {
+  align-items: ;
+}
+.banner2-img-1 {
+  max-height: 900px;
+  width: 100%;
+  border-radius: 4px 0px 0px 4px;
+}
+.banner-2-box::after {
+  content: "Evening Soirée";
+  position: absolute;
+  color: var(--c1);
+  bottom: 180px;
+  left: 130px;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: var(--b);
+  background-color: var(--c11);
+  padding: 16px 20px;
+  border-radius: 4px;
+}
+.banner2-img-2 {
+  border-radius: 4px;
+  max-width: 300px;
+}
+.conteudo-banner2 {
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-banner2 h4 {
+  font-family: var(--b);
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--c5);
+  font-weight: 400;
+}
+.box-2 {
+  max-width: 1000px;
+  height: 650px;
+  background-color: var(--c12);
+  display: grid;
+  place-items: center;
+}
+.box-2 a {
+  color: var(--c4);
+  align-self: flex-start;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (max-width: 1100px) {
+  .conteudo-banner2 h4 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .conteudo-banner2 {
+    background-color: #090f0f;
+  }
+  .box-2 {
+    background-color: #090f0f;
+  }
+  .box-2 img {
+    width: 100%;
+  }
+  .box-2 a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 16px;
+    border: 2px solid var(--c4);
+    border-radius: 4px;
+  }
+  .btn-effects::after {
+    display: none;
+  }
+  .conteudo-banner2 h4 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .banner-2 {
+    height: 100%;
+    border-radius: 0px;
+  }
+  .banner-2-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .conteudo-banner2 {
+    display: none;
+  }
+  .conteudo-banner2 a {
+    position: absolute;
+    display: block;
+  }
+  .banner2-img-1 {
+    border-radius: 0px;
+    max-width: 100%;
+  }
+  .banner-2-box::after {
+    background-color: --c11;
+
+    left: 20%;
+    bottom: 15%;
+    font-size: 18px;
   }
 }
